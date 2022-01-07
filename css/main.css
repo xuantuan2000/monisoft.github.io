@@ -1,0 +1,358 @@
+
+
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --text-color: #6E6B7B;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    max-width: 100%;
+    font-family:'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Banner */
+.banner{
+    height: 1024px;
+    position: relative;
+    background: url(/Monisoft/Front_end/DangNhap/imgs/banner_monisoft.jpg) top center / cover no-repeat;
+}
+
+
+/* Content */
+
+.content{
+    position: absolute;
+}
+
+.content_container{
+    display: flex;
+}
+
+.content_left{
+    margin: 36px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content_left_logo{
+    display: flex;
+}
+.content_left_logo img{
+    width: 150px;
+    margin-right: 10px;
+}
+
+.left_logo_name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left_logo_name h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 -20px 0;
+    letter-spacing: 4px;
+}
+.left_logo_name p{
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+
+.content_left_text{
+    max-width: 74%;
+}
+.content_left_text h1{
+    font-weight: 500;
+    font-size: 34px;
+}
+.content_left_text p{
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+/* Content right */
+
+.content_right{
+    height: 1024px;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.content_right .content_right_container{
+    margin: 10px 56px;
+    width: 480px;
+}
+
+.content_right_container p{
+    color: #79AAFF;
+}
+
+.content_right_logo{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content_right_logo img{
+    max-width: 250px;
+}
+
+.content_login h2{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content_login .lbl_password{
+   display: flex;
+   justify-content: space-between;
+}
+
+
+form .input-style{
+    margin: 10px 0;
+     display: flex;
+   height: 61px;
+   border-radius: 10px;
+   border: 1px solid rgba(110, 107, 123, 0.5);
+}
+
+.frm_dangky_otp .input_container_otp{
+    margin: 42px 38px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.frm_dangky_otp .input_container_otp input{
+    opacity: 0.8;
+    width: 40px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    flex: 1;
+    flex-shrink: 0;
+    filter: none;
+    font-size: 1.4rem;
+    padding: 10px ;
+    font-size: 20px;
+    
+}
+
+.frm_dangky_otp .input-style-otp{
+    width: 61px;
+    height: 61px;
+    border-radius: 10px;
+    border: 2px solid rgba(110, 107, 123, 0.5);
+}
+
+.frm_dangnhap .btn_login{
+    color: #fff;
+    background-color: #79AAFF;
+    text-align: center;
+    cursor: pointer;
+    padding: 18px 0;
+    border-radius: 10px;
+}
+form .btn_login:hover{
+    opacity: 0.8;
+}
+
+form .btn_send_otp{
+    margin: 30px 0;
+    color: #fff;
+    background-color: #79AAFF;
+    text-align: center;
+    cursor: pointer;
+    padding: 18px 0;
+    border-radius: 10px;
+}
+form .btn_login:hover{
+    opacity: 0.8;
+}
+
+form .btn_resend_otp{
+
+    text-align: center;
+    margin-top: 24px ;
+    padding: 5px 0;
+    cursor: pointer;
+    
+}
+
+
+form .input_username input{
+    opacity: 0.8;
+    border: none;
+    border-radius: 10px;
+    flex: 1;
+    flex-shrink: 0;
+    filter: none;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+form .input_password input{
+    opacity: 0.8;
+    border: none;
+    border-radius: 8px;
+    flex: 1;
+    flex-shrink: 0;
+    filter: none;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.input_password .btn_eye{
+    display: flex;
+    align-items: center;
+}
+
+.input_password .btn_eye i{
+    padding: 15px;
+    opacity: 0.8;
+    font-size: 18px;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.input_password .js_eye_open{
+    display: none;
+}
+
+.input_checkbox input{
+    margin-right: 10px;
+}
+
+
+form .btn_login{
+    color: #fff;
+    background-color: #79AAFF;
+    text-align: center;
+    cursor: pointer;
+    padding: 18px 0;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+form .btn_login:hover{
+    opacity: 0.8;
+}
+
+form .btn_dangkyngay{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* button next */
+.frm_dangky_otp .btn_next{
+    width: 177px;
+    margin: auto;
+    color: #fff;
+    background-color: #79AAFF;
+    text-align: center;
+    cursor: pointer;
+    padding: 18px 0;
+    border-radius: 10px;
+}
+.frm_dangky_otp .btn_next:hover{
+    opacity: 0.8;
+}
+
+/* button resend OTP */
+.frm_dangky_otp .btn_resend_otp button{
+    background-color: #fff;
+    color: #7367F0;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(110, 107, 123, 0.5);
+}
+
+form .signup{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+form .login_or{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+}
+.login_or .line{
+    margin: 0 6px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(110, 107, 123, 0.3);
+}
+
+form .login_gg{
+    padding: 15px 0;
+    cursor: pointer;
+    margin: 18px 0 70px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+form .login_gg:hover{
+    opacity: 0.8;
+}
+form .gg_icon{
+    margin: 0 -50px 0 22px;
+    width: 18px;
+    float: left;
+}
+form .login_gg img{
+    width: 18px;
+}
+form .login_gg p{
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+}
+
+
+.js_frm_close{
+    display: none;
+}
+.js_frm_open{
+    display: inline;
+}
+
+
+
+
+/* Responsive */
+/* PC */
+@media (min-width: 1024px) { 
+    
+}
+/* Tablet */
+@media (min-width: 740px) {
+    
+}
+/* Mobile */
+@media (max-width: 740px) {
+    
+}
